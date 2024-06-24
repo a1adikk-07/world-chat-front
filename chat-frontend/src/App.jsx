@@ -54,8 +54,8 @@ function App() {
   return (
     <div className="App">
       {!nickname && <SigninChatForm onSubmit={addNickname} />}
-      {nickname && <ChatForm onSubmit={addMessage} />}
       {nickname && <Chat items={messages} />}
+      {nickname && <ChatForm onSubmit={addMessage} />}
     </div>
   );
 }
